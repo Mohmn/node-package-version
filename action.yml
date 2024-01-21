@@ -1,0 +1,19 @@
+name: "get node package version"
+description: "get major, minor package versions"
+inputs:
+  package-path:
+    description: "package.json file path"
+    default: "."
+    required: false
+outputs:
+  major-version:
+    description: "major package version"
+  minor-version:
+    description: "minor package version"
+  patch-version:
+    description: "patch package version"
+  package-version:
+    description: "package.json version"
+runs:
+  using: "node20"
+  main: "main.js"
